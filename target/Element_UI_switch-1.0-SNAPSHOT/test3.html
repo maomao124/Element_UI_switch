@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_switch
+  File name(文件名): test3
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/28
+  Time(创建时间)： 21:11
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <el-switch v-model="value" active-color="#13ce66" active-text="开" inactive-text="关" @change="change">
+
+    </el-switch>
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            value: false,
+        },
+        methods: {
+            change: function ()
+            {
+                console.log(this.value);
+            }
+        },
+        mounted()
+        {
+
+        }
+    })
+</script>
+
+</body>
+</html>
